@@ -1,6 +1,5 @@
 package com.nelioalves.cursomc.domain;
 
-import java.awt.List;
 import java.io.Serializable;
 
 import javax.persistence.Entity;

@@ -23,7 +23,7 @@ public class FieldMessager {
 		this.fieldName = fieldName;
 	}
 
-	public String getMessager() {
+	public String getMessage() {
 		return messager;
 	}
 

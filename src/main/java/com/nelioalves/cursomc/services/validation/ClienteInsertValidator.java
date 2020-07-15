@@ -8,7 +8,6 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.nelioalves.cursomc.domain.Cliente;
 import com.nelioalves.cursomc.domain.enums.TipoCliente;
 import com.nelioalves.cursomc.dto.ClienteNewDTO;
 import com.nelioalves.cursomc.repositories.ClienteRepository;
@@ -24,7 +23,7 @@ public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert
 	public void initialize(ClienteInsert ann) {
 	}
 
-	@Override
+	@Override	
 	public boolean isValid(ClienteNewDTO objDto, ConstraintValidatorContext context) {
 		List<FieldMessager> list = new ArrayList<>();
 

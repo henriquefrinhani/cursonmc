@@ -29,7 +29,7 @@ public class Pedido implements Serializable {
 	private Date instante;
 	
 	@OneToOne(cascade = CascadeType.ALL, mappedBy = "pedido")
-	private Pagamento pagametno;
+	private Pagamento pagamento;
 	
 	@ManyToOne
 	@JoinColumn(name = "cliente_id")
@@ -77,12 +77,12 @@ public class Pedido implements Serializable {
 		this.instante = instante;
 	}
 
-	public Pagamento getPagametno() {
-		return pagametno;
+	public Pagamento getPagamento() {
+		return pagamento;
 	}
 
-	public void setPagametno(Pagamento pagametno) {
-		this.pagametno = pagametno;
+	public void setPagamento(Pagamento pagamento) {
+		this.pagamento = pagamento;
 	}
 
 	public Cliente getCliente() {
